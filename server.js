@@ -25,6 +25,7 @@ const API_KEY = process.env.TWELVEDATA_API;
 
 const bot = new TelegramBot(TELEGRAM_TOKEN, { polling: true });
 
+const bot = new TelegramBot
 bot.onText(/\/test/, (msg) => {
   bot.sendMessage(msg.chat.id, "BOT WORKING ✅");
 });
