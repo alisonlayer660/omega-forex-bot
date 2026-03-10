@@ -25,7 +25,17 @@ const API_KEY = process.env.TWELVEDATA_API;
 
 const bot = new TelegramBot(TELEGRAM_TOKEN, { polling: true });
 
-bot.sendMessage(CHAT_ID, "🚀 OMEGA BOT STARTED");
+bot.onText(/\/signal/, async (msg) => {
+
+let pair = "EUR/USD";
+
+let candles = await getCandles(pair);
+
+let result = analyze(candles);
+
+await sendSignal(pair, result.signal || "BUY", result.confidence || 90, candles);
+
+});
 });
 
 const PAIRS = [
