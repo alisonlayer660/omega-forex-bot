@@ -35,7 +35,7 @@ const PAIRS = [
 "GBP/USD",
 "USD/JPY",
 "AUD/USD",
-"USD/CAD"
+"USD/CAD",
 "EUR/JPY",
 ];
 
