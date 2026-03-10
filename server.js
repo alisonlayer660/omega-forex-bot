@@ -33,7 +33,7 @@ const PAIRS = [
 "USD/JPY",
 "AUD/USD",
 "USD/CAD"
-"EUR/jpy",
+"EUR/JPY",
 ];
 
 let lastSignalTime = 0;
