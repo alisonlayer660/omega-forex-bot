@@ -34,8 +34,6 @@ let candles = await getCandles(pair);
 let result = analyze(candles);
 
 await sendSignal(pair, result.signal || "BUY", result.confidence || 90, candles);
-
-});
 });
 
 const PAIRS = [
