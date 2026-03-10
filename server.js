@@ -25,7 +25,6 @@ const API_KEY = process.env.TWELVEDATA_API;
 
 const bot = new TelegramBot(TELEGRAM_TOKEN, { polling: true });
 
-bot.onText(/\/test/, (msg) => {
 bot.sendMessage(CHAT_ID, "🚀 OMEGA BOT STARTED");
 });
 
