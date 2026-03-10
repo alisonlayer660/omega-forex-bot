@@ -19,9 +19,9 @@ const { createCanvas } = require("canvas");
    CONFIG
 ================================= */
 
-const TELEGRAM_TOKEN = process.env.TELEGRAM_TOKEN || "PUT_YOUR_TELEGRAM_BOT_TOKEN";
-const CHAT_ID = process.env.CHAT_ID || "PUT_YOUR_CHAT_ID";
-const API_KEY = process.env.TWELVEDATA_API;
+const TELEGRAM_TOKEN = process.env.TELEGRAM_TOKEN || "8525672936:AAF9EhUr1-Ufkhuu_ljtNs4DxpbDmuuOtq0";
+const CHAT_ID = process.env.CHAT_ID || "-1003850982234";
+const API_KEY = process.env.81dad6ad5f144c4bb3157abee01783d8;
 
 const bot = new TelegramBot(TELEGRAM_TOKEN);
 
@@ -31,6 +31,7 @@ const PAIRS = [
 "USD/JPY",
 "AUD/USD",
 "USD/CAD"
+"EUR/jpy",
 ];
 
 let lastSignalTime = 0;
