@@ -1,3 +1,15 @@
+const express = require("express");
+const app = express();
+
+const PORT = process.env.PORT || 3000;
+
+app.get("/", (req,res)=>{
+res.send("TRADER SHISHIR QX GHOST OMEGA RUNNING");
+});
+
+app.listen(PORT,()=>{
+console.log("Web server running on port",PORT);
+});
 
 const axios = require("axios");
 const TelegramBot = require("node-telegram-bot-api");
